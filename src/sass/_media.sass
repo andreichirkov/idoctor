@@ -1,0 +1,240 @@
+@media (max-width : 992px)
+  .cover
+    height: 600px
+    &__title 
+        font-size: 25px
+    &__subtitle
+        font-size: 16px
+    &__image
+        top: 15%
+        max-width: 340px
+    
+  .mainOffer
+    &__image
+      width: 300px
+      right: 120px
+    &__col
+      margin-left: 50px
+    &__phone
+      margin-top: 400px
+
+  .team
+    height: 830px
+    &__image
+      text-align: center
+    &__about
+      margin-top: 110px
+    &__person
+      margin-top: 32px
+      margin-left: 90px
+    
+  .whyUs
+    &__items
+      flex-wrap: wrap-reverse
+    &__list
+      max-width: 350px
+
+  .justPrice
+    padding-top: 350px
+
+   
+
+@media (max-width : 768px)
+  .header
+    &__nav
+      position: fixed
+      top: 0
+      right: -100%
+      width: 280px
+      height: 300px
+      padding: 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      z-index: 100
+      background-color: rgba(0, 0, 0, .8 )
+      color: white
+      transition: all 0.5s
+      &_active
+        z-index: 10
+        top: 0
+        right: 50%
+        transform: translate(50%, -1%)
+    &__item
+      margin: 10px 0
+  
+  .burger 
+    display: block
+    position: fixed
+    top: 25px
+    right: 20px
+    transform: translateY(-50%)
+    width: 25px
+    height: 12px
+    span 
+      margin-bottom: 2px
+      display: block
+      height: 2px 
+      width: 100%
+      background-color: #000000
+      transition: all 0.5s
+    &_active
+      span
+        margin-bottom: -2px
+        &:nth-child(1)
+          transform: rotate(-45deg) 
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: rotate(45deg) 
+
+  .cover
+    height: 440px
+    &__text
+      // margin-right: 200px
+    &__title 
+        font-size: 20px
+    &__subtitle
+        font-size: 10px
+    &__image
+        top: 15%
+        max-width: 280px
+
+  .priceList
+    height: 440px
+    &__items
+      flex-wrap: wrap
+      justify-content: center
+    &__text
+      margin-left: 0px
+    &__image 
+      margin-top: 60px
+      width: 400px
+      margin-right: 0px
+
+  .whyUs
+    height: 650px
+    &__divider
+      margin-top: -12px
+      img 
+        width: 500px
+      
+  .mainOffer
+    &__phone
+      margin-top: 400px
+    &__image
+      width: 280px
+      position: absolute
+      right: 80px
+      top: 30%
+
+  .reviews
+    padding-top: 100px
+
+  .team
+    height: 850px
+    &__about
+      margin-top: 110px
+    &__person
+      margin-top: 32px
+      margin-left: 46px
+
+  // .justPrice
+  //   margin-top: 300px
+  //   height: 200px
+  //   width: 500px
+  //   &__offer
+  //     margin-left: auto
+  //     margin-right: auto
+
+
+@media only screen and (max-width : 576px) 
+  .cover
+    height: 540px
+    &__text
+      // margin-right: 200px
+    &__title 
+      margin-right: 10%
+      margin-top: 50px
+        
+    &__subtitle
+        font-size: 10px
+        margin-right: 10%
+        margin-top: 350px
+    &__image
+        top: 28%
+        max-width: 280px
+    &__divider
+      display: none
+
+  .consult
+    height: 700px
+    padding-top: 50px
+    &__form
+      flex-wrap: wrap
+    input
+      margin-right: 10%
+      margin-left: 10%
+      margin-bottom: 20px
+    button 
+      margin-right: 10%
+      margin-left: 10%
+  .whyUs
+    &__divider
+      margin-top: -12px
+      img 
+        width: 390px
+
+  .justPrice
+    padding-top: 400px
+    &__offer
+      margin-right: auto
+
+ 
+ 
+@media only screen and (max-width : 510px)
+  .cover
+    height: 540px
+
+  .mainOffer
+    &__image
+      right: 60px
+
+@media only screen and (max-width : 418px)
+  .team
+    height: 860px
+    &__image
+      text-align: center
+    &__about::after
+      bottom: 10px
+    &__person
+      margin-left: 10px
+    &__imagePerson
+      width: 80px
+      height: auto
+
+
+@media only screen and (max-width : 370px)
+  .cover
+    &__title
+      font-size: 18px
+    &__subtitle
+      font-size: 9px
+    
+  .consult
+    &__form
+      padding-top: 330px
+
+  .whyUs
+    &__title
+      font-size: 21px
+    &__divider
+      margin-top: -10px
+
+  .mainOffer
+    &__col
+      margin-left: 30px
+    &__image
+      right: 10px
+      
+      

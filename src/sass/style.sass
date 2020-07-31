@@ -1,0 +1,335 @@
+@import 'media'
+@font-face 
+  font-family: 'Geometria'
+  src: url('../fonts/Geometria-Light.eot')
+  src: url('../fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria-Light.woff') format('woff'), url('../fonts/Geometria-Light.ttf') format('truetype')
+  font-weight: 200
+  font-style: normal
+
+@font-face 
+  font-family: 'Geometria'
+  src: url('../fonts/Geometria.eot')
+  src: url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria.woff') format('woff'), url('../fonts/Geometria.ttf') format('truetype')
+  font-weight: 300
+  font-style: normal
+
+@font-face 
+  font-family: 'Geometria'
+  src: url('../fonts/Geometria-Medium.eot')
+  src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria-Medium.woff') format('woff'), url('../fonts/Geometria-Medium.ttf') format('truetype')
+  font-weight: 400
+  font-style: normal
+
+@font-face 
+  font-family: 'Geometria'
+  src: url('../fonts/Geometria-Bold.eot')
+  src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria-Bold.woff') format('woff'), url('../fonts/Geometria-Bold.ttf') format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face 
+  font-family: 'Geometria'
+  src: url('../fonts/Geometria-ExtraBold.eot')
+  src: url('../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria-ExtraBold.woff') format('woff'), url('../fonts/Geometria-ExtraBold.ttf') format('truetype')
+  font-weight: 600
+  font-style: normal
+
+html,
+body 
+  margin: 0
+  font-family: 'Geometria', sans-serif
+  font-weight: 300
+
+img 
+  max-width: 100%
+  height: auto
+
+.burger 
+  display: none
+  z-index: 10000
+
+.header 
+  text-align: center
+  margin-top: 5px
+  font-size: 40px
+  font-weight: 500
+  &__divider 
+    width: 90%
+    margin-left: 5%
+    height: 1px
+    background-color: rgba(0, 0, 0, 0.2)
+  &__nav 
+    display: flex
+    flex-wrap: wrap
+    margin-top: 5px
+    justify-content: space-evenly
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 400
+
+
+.cover
+  height: 700px
+  font-weight: 500
+  line-height: 2rem
+  color: #808080
+  text-align: right
+  position: relative
+  // z-index: 10
+  &__title 
+    font-size: 29px
+    line-height: 1.4em
+    margin-top: 35%
+    font-weight: 400
+  &__divider
+    width: 70%
+    margin-left: auto
+  &__subtitle
+    font-size: 17px
+    line-height: 1.4em
+    font-weight: 400
+  &__image
+    position: absolute
+    width: 540px
+    right: 0
+    top: 10%
+    z-index: -100
+
+.consult
+  padding-top: 35px
+  height: 500px
+  font-weight: 400
+  text-align: center
+  background: url('../img/general/hand.jpg') center center/cover no-repeat
+  &__title
+    font-size: 30px
+    font-weight: 300
+  &__form
+    display: flex
+    padding-top: 360px
+    margin: 0 20px
+  &__item
+    margin: 0 40px
+  input
+    font-weight: 300
+    width: 100%
+    min-width: 130px
+    height: 50px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid 
+    color: #4b4b4b
+  button
+    width: 100%
+    min-width: 130px
+    height: 50px
+    background-color: transparent
+    border: 1px solid
+    color: #4b4b4b
+
+.priceList
+  // background-color: LightCyan
+  height: 440px
+  &__items
+    display: flex
+    justify-content: space-between
+  &__title
+    margin-top: 130px
+  &__text
+    margin-left: 105px
+    i 
+      color: #0000FF
+  &__image 
+    margin-top: 240px
+    width: 500px
+    margin-right: 100px
+
+.whyUs
+  // background-color: LightCyan
+  min-height: 380px
+  margin-top: 130px
+  &__items
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-end
+  &__image 
+    width: 330px
+    z-index: 100
+  &__text
+    padding-left: 20px
+    z-index: 100
+  &__title
+    font-size: 25px
+    font-weight: 300
+  &__list
+    color: #808080
+    list-style: none
+    padding: 0
+    font-size: 15px
+    font-weight: 300
+    line-height: 1.5em
+  &__divider
+    text-align: center
+    margin-top: -21px
+
+.mainOffer
+  height: 700px
+  padding-top: 80px
+  background: url('../img/general/bg.jpg') center center/cover no-repeat
+  position: relative
+  color: #808080
+  line-height: 1.4em
+  &__col
+    margin-left: 160px
+  &__title
+    color: black
+    font-weight: 400
+  &__list
+    span 
+      color: black
+  &__phone
+    margin-top: 450px
+  &__image
+    width: 380px
+    position: absolute
+    right: 210px
+    top: 20%
+
+.reviews
+  background-color: #f2f2f2
+  padding-top: 180px
+  &__title
+    text-align: center
+    font-size: 25px
+    font-weight: 300
+    margin-top: 20px
+  &__item
+    margin-top: 50px
+  &__text
+    background-color: #fff
+    padding: 35px
+    border-radius: 10px
+    font-weight: 200
+    line-height: 1.4em
+  &__human
+    display: flex
+    margin-top: 20px
+  &__who
+    padding-left: 20px
+    margin-top: auto
+  &__link
+    margin-top: 8px
+    font-weight: 200
+  &__image
+    height: 50px
+    border-radius: 50%
+  
+
+.team
+  padding-top: 180px
+  min-height: 600px
+  background-color: #f2f2f2
+  font-size: 16px
+  font-weight: 200
+  line-height: 1.4em
+  color: #808080
+  &__title
+    font-size: 25px
+    font-weight: 400
+    text-align: center
+    color: black
+    margin-bottom: 60px
+  &__image
+    margin-bottom: -50px
+    img
+      width: 330px
+  &__about
+    border-top: 1px solid rgba(0, 0, 0, .2)
+    position: relative
+    height: 280px
+  &__about::before
+    content: url(../img/general/no-name.png)
+    position: absolute
+    left: 100px
+    top: -18px 
+  &__about::after
+    content: ''
+    display: block
+    width: 25%
+    background-color: rgba(0, 0, 0, .2)
+    height: 1px
+    position: absolute
+    bottom: 60px
+  &__text
+    padding-top: 50px
+    padding-bottom: 50px
+  &__person
+    display: flex
+    margin-top: 32px
+    margin-left: 52px
+    span  
+      color: black
+      font-weight: 300
+  &__imagePerson
+    width: 90px
+  &__andrei
+    padding-top: 26px
+    margin-left: 10px
+
+.justPrice
+  padding-top: 200px
+  padding-bottom: 100px
+  min-height: 200px
+  &__offer
+    display: inline-block
+    margin-right: 100px
+  
+
+.contacts
+  min-height: 500px;
+  margin-top: 30px;
+  font-size: 16px
+  font-weight: 200
+  &__title
+    margin-top: 20px
+    font-size: 30px
+    font-weight: 400
+  &__tel
+    color: black
+    font-size: 20px
+    font-weight: 400
+  &__address
+    padding-top: 55px
+    font-style: normal
+  &__time
+    padding-top: 25px
+  &__offer
+    padding-top: 25px
+  i 
+    padding-top: 25px
+    font-size: 25px
+    padding-bottom: 25px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+  
